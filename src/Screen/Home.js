@@ -218,19 +218,6 @@ export default function Home() {
                 <div id="model__image-download" className={classes.model__image}>
                     <ModelImage propsImageModel={propsImageModel} />
                 </div>
-
-                <div className={classes["model__list--btn"]}>
-                    <Button click={() => random()}>
-                        <span className={classes.model__icon}>
-                            <i className="fas fa-random"></i>
-                        </span>
-                    </Button>
-                    <Button click={() => downloadPNG()}>
-                        <span className={classes.model__icon}>
-                            <i className="fas fa-download"></i>
-                        </span>
-                    </Button>
-                </div>
             </div>
 
             <div className={classes["model__content--right"]}>
@@ -246,6 +233,20 @@ export default function Home() {
                     <div className={classes["model__choose--bottom"]}>
                         <ul>{renderChooseBottom()}</ul>
                     </div>
+
+                    <div className={classes["model__list--btn"]}>
+                    <h3>Action</h3>
+                    <Button click={() => random()}>
+                        <span className={classes.model__icon}>
+                            <i className="fas fa-random"></i>
+                        </span>
+                    </Button>
+                    <Button click={() => downloadPNG()}>
+                        <span className={classes.model__icon}>
+                            <i className="fas fa-download"></i>
+                        </span>
+                    </Button>
+                </div>
                 </div>
             </div>
         </div>

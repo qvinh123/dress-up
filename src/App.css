@@ -14,12 +14,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: 100vh;
+  position: relative;
 }
 
 :root {
-  --color-text: #2a7bf4;
   --color-white: #fff;
-  --color-bg: #002966;
-  --color-hover: #2a5ca7
+  --color-button: #61bd4f;
+  --color-red: rgb(114,43,29,.75)
 }
